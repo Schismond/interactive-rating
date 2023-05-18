@@ -13,14 +13,14 @@ for (let i = 0; i < rating.length; i++) {
                 rating[j].classList.remove('active');
             }
         }
-        selectedRating = i; // Update the selected rating index
-        btn.addEventListener('click', buttonClickHandler); // Enable button click event listener
+        selectedRating = i;
+        btn.addEventListener('click', buttonClickHandler); 
     });
 }
 function buttonClickHandler() {
     if (selectedRating !== -1) {
         firstPage.style.display = 'none';
-        secondPage.style.display = 'flex';
+        secondPage.style.display = 'block';
         print.innerText = `You selected ${selectedRating + 1} out of 5`;
     } else {
         console.log('Please select a rating before clicking the button.');

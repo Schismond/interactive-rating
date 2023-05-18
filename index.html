@@ -20,47 +20,46 @@
     />
     <title>Interactive rating component</title>
   </head>
-  <body
-    class="grid place-items-center bg-DarkBlue text-LightGrey min-h-screen"
-  >
-  <!-- ADD flex in JS don't forget huh-->  
-    <div
-     id="firstPage"  class=" p-6 w-[90vw] md:max-w-[26rem] flex flex-col justify-between container bg-grey3 rounded-3xl"
-    >
+  <body class="grid place-items-center bg-DarkBlue text-LightGrey min-h-screen">
+    <header id="firstPage">
       <div
-        class="my-2 py-4 grid place-content-center h-12 w-12 bg-grey rounded-full shadow-md hover:bg-grey bg-star bg-center bg-no-repeat"></div>
-      <h1 class="py-2 text-white font-bold text-2xl">How did we do?</h1>
-      <p class="py-4">
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-      <div id="rating" class="flex justify-around gap-1 py-4">
-        <div class="circle">1</div>
-        <div class="circle">2</div>
-        <div class="circle">3</div>
-        <div class="circle">4</div>
-        <div class="circle">5</div>
+        class="p-6 w-[90vw] md:max-w-[26rem] flex flex-col justify-between container bg-grey3 rounded-3xl"
+      >
+        <div
+          class="my-2 py-4 grid place-content-center h-12 w-12 bg-grey rounded-full shadow-md hover:bg-grey bg-star bg-center bg-no-repeat"
+        ></div>
+        <h1 class="py-2 text-white font-bold text-2xl">How did we do?</h1>
+        <p class="py-4">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <nav id="rating" class="flex justify-around gap-1 py-4">
+          <div class="circle">1</div>
+          <div class="circle">2</div>
+          <div class="circle">3</div>
+          <div class="circle">4</div>
+          <div class="circle">5</div>
+        </nav>
+        <button id="btn" class="btn-primary font-bold">SUBMIT</button>
       </div>
-      <button id="btn" class="btn-primary font-bold">SUBMIT</button>
-    </div>
+    </header>
 
-
-
-
-
-
-
-
-
-
-    <div id="secondPage" class="hidden p-6 w-[90vw] md:max-w-[26rem] flex-col justify-between container bg-grey3 rounded-3xl text-center">
+    <main id="secondPage" style="display: none">
+      <div
+        class="p-6 w-[90vw] md:max-w-[26rem] flex-col justify-between container bg-grey3 rounded-3xl text-center"
+      >
         <div class="my-2 py-16 bg-thank bg-center bg-no-repeat"></div>
-        <div class="my-4"><p id="print" class="text-orange-500 bg-grey rounded-full inline p-2 "> You selected 4 out of 5</p></div>
+        <div class="my-4">
+          <p id="print" class="text-orange-500 bg-grey rounded-full inline p-2">
+            You selected 4 out of 5
+          </p>
+        </div>
         <h1 class="py-2 text-white font-bold text-2xl">Thank you!</h1>
         <p class="py-4">
-        We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
         </p>
-        
-    </div>
+      </div>
+    </main>
   </body>
 </html>
