@@ -20,7 +20,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 ### Links
 
 - Solution URL: [gitub repo](https://github.com/Schismond/interactive-rating)
-- Live Site URL: [gitub pages](https://schismond.github.io/interactive-rating)
+- Live Site URL: [netlify app](https://interactive-rating-component-challeng.netlify.app)
 
 ## My process
 
