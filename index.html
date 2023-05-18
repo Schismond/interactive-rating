@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Interactive rating component</title>
+  </head>
+  <body
+    class="grid place-items-center bg-DarkBlue text-LightGrey min-h-screen"
+  >
+  <!-- ADD flex in JS don't forget huh-->  
+    <div
+     id="firstPage"  class=" p-6 w-[90vw] md:max-w-[26rem] flex flex-col justify-between container bg-grey3 rounded-3xl"
+    >
+      <div
+        class="my-2 py-4 grid place-content-center h-12 w-12 bg-grey rounded-full shadow-md hover:bg-grey bg-star bg-center bg-no-repeat"></div>
+      <h1 class="py-2 text-white font-bold text-2xl">How did we do?</h1>
+      <p class="py-4">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div id="rating" class="flex justify-around gap-1 py-4">
+        <div class="circle">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+        <div class="circle">5</div>
+      </div>
+      <button id="btn" class="btn-primary font-bold">SUBMIT</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div id="secondPage" class="hidden p-6 w-[90vw] md:max-w-[26rem] flex-col justify-between container bg-grey3 rounded-3xl text-center">
+        <div class="my-2 py-16 bg-thank bg-center bg-no-repeat"></div>
+        <div class="my-4"><p id="print" class="text-orange-500 bg-grey rounded-full inline p-2 "> You selected 4 out of 5</p></div>
+        <h1 class="py-2 text-white font-bold text-2xl">Thank you!</h1>
+        <p class="py-4">
+        We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+        </p>
+        
+    </div>
+  </body>
+</html>

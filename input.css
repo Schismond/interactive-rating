@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .circle {
+    @apply grid place-content-center h-12 w-12 cursor-pointer bg-[#262f38] rounded-full shadow-md hover:bg-[#7c8898] hover:text-white focus:outline-none;
+  }
+
+  .circle.active {
+    background-color: #fb7718;
+    color: #fff;
+  }
+
+  .btn-primary {
+    @apply py-3 px-4 bg-[#FB7718] text-white hover:text-[#FB7718] hover:bg-white rounded-full shadow-md focus:outline-none;
+  }
+}
